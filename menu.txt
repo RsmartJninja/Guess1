@@ -1,0 +1,5 @@
+Daily dishes:
+- ['soup', 'fish', 'sweets']
+
+Daily prizes:
+- [10, 20, 30]
