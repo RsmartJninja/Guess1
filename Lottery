@@ -1,0 +1,39 @@
+#Lottery game WITH repeating numbers
+print "> Programm: Welcome to the Lottery numbers generator."
+from random import randint
+lottery_numbers = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45]
+
+
+#lottery_numbers = {"a": (" "),
+#                   "b": (" "),
+#                   "c": (" "),
+#                   "d": (" "),
+#                   "e": (" "),
+#                   "f": (" ")
+#                   }
+
+def random_numbers():
+    rand = randint(0,45)
+    return lottery_numbers[rand]
+
+#def unique_numbers(letters):
+#    a,b,c,d,e = sample (range (1,45),5)
+#    f = randint (1,35)
+#    while f!=a and f!=b and f!=c and f!=d and f!=e:
+#        f = randint(1,35)
+#        return a,b,c,d,e,f
+
+u_number = int(raw_input("> Programm: Please enter how many random numbers would you like to get: "))
+for number in xrange(0,u_number):
+    if u_number == 1:
+        print random_numbers()
+    if u_number == 2:
+        print random_numbers()
+    if u_number == 3:
+        print random_numbers()
+    if u_number == 4:
+        print random_numbers()
+    if u_number == 5:
+        print random_numbers()
+    if u_number == 6:
+        print random_numbers()
