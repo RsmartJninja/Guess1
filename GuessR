@@ -1,0 +1,18 @@
+#Guess Operator with random secret numbers
+from random import randint
+secret = [7,1]
+
+def random_secret():
+    rand = randint(0,1)
+    return secret[rand]
+def main():
+    guess = int(raw_input ("Guess Number:"))
+    print guess
+    if (guess == secret):
+        print "Congratulation!"
+    else:
+        print "Wrong! Try it again!"
+
+
+if __name__ == "__main__":
+    main()
