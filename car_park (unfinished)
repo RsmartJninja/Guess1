@@ -1,0 +1,48 @@
+class vehicles (object):
+    def __init__(self, brand, model, k_done, gs_date):
+        self.brand = brand
+        self.model = model
+        self.k_done = k_done
+        self.gs_date = gs_date
+
+car_park = vehicles(brand = " ", model = " ", k_done = " ", gs_date = " ")
+print "Pharmacy-X Vehicle Program Manager"
+
+
+
+while True:
+    questions = raw_input ("Do you want to see the car_park_list?: (yes/no)")
+
+    if questions == "yes":
+        print "Please have a look at car_park.txt file"
+        break
+
+
+    if questions == "no":
+        edit = raw_input("Would you like to edit the car_park_list? (yes/no)")
+
+        if edit == "yes":
+            brand = raw_input ("Please enter a brand: ")
+            model = raw_input("Please enter a model: ")
+            k_done = int(raw_input("Please enter k_done: "))
+            gs_date = int(raw_input("Please enter gs_date ddmmyy: "))
+
+
+        if edit == "no":
+            print "exit"
+            break
+
+
+with open("car_park.txt", "w+") as car_file:
+    car_file.write("Brands\n" + "\n")
+    car_file.write("- " + brand + "\n")
+    car_file.write("\n")
+    car_file.write("Models\n" + "\n")
+    car_file.write("- " + model + "\n")
+    car_file.write("\n")
+    car_file.write("k_done\n" + "\n")
+    car_file.write("- " + str(k_done) + "\n")
+    car_file.write("\n")
+    car_file.write("gs_date\n" + "\n")
+    car_file.write("- " + str(gs_date) + "\n")
+    car_file.write("\n")
